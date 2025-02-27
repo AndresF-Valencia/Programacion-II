@@ -1,13 +1,39 @@
 package co.edu.uniquindio.poo.sistemagestionempleados;
 
+import java.util.List;
+
 public class Gerente extends Empleado implements IRolGerente, IContribuyentes {
+
+    public Gerente(String nombre, String id){
+        super(nombre, id);
+    }
+
     @Override
     public void contribuir() {
 
     }
 
-    public Gerente(String nombre, String id){
-        super(nombre, id);
+    @Override
+    public void asignarDepartamento(Departamento departamento) {
+
+
+    }
+
+    @Override
+    public void asignarProyecto(Proyecto proyecto) {
+
+    }
+
+    @Override
+    public List<Departamento> obtenerDepartamento() {
+
+        return List.of();
+    }
+
+    @Override
+    public List<Proyecto> obtenerProyecto() {
+
+        return List.of();
     }
 
 
