@@ -1,14 +1,9 @@
 package co.edu.uniquindio.poo.sistemagestionempleados;
 
-public class Tecnico extends Empleado {
-
-    public Tecnico(String nombre, String id) {
-        super(nombre, id);
-    }
-
+public class Tecnico extends Empleado implements IRolTecnico, IContribuyentes {
     @Override
-    public void ejecutarProyecto() {
-
+    public void contribuir() {
+        
     }
 
     @Override
@@ -17,7 +12,18 @@ public class Tecnico extends Empleado {
     }
 
     @Override
-    public void enviarDocumentacion() {
+    public void ejecutarProyectos() {
 
     }
+
+    @Override
+    public void entregarDocumentos() {
+
+    }
+
+    public Tecnico(String nombre, String id) {
+        super(nombre, id);
+    }
+
+
 }
