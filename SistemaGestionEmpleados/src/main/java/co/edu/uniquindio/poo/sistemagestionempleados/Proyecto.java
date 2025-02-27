@@ -9,15 +9,17 @@ import java.util.List;
 public class Proyecto {
     private String nombre;
     private String codigo;
-    private String estado;
+    private EstadoProyecto estado;
     private List<Empleado> listaEmpleadosAsignados;
+
+
 
     public Proyecto(String nombre, String codigo) {
         this.nombre = nombre;
         this.codigo = codigo;
 <<<<<<< Updated upstream
 =======
-        this.estado = "En curso"; // Estado inicial por defecto
+        this.estado = PENDIENTE; // Estado inicial por defecto
 >>>>>>> Stashed changes
         this.listaEmpleadosAsignados = new ArrayList<>();
     }
