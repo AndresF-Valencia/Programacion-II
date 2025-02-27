@@ -1,11 +1,9 @@
 package co.edu.uniquindio.poo.sistemagestionempleados;
 
-import java.util.List;
-
 public class Proyecto {
     private String nombre;
     private String codigo;
-    public List<Empleado> ListaEmpleadosAsignados ;
+    Empleado ListaEmpleadosAsignados ;
 
     public Proyecto(String nombre) {
         this.nombre = nombre;
@@ -24,12 +22,8 @@ public class Proyecto {
     public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
-    public List<Empleado> getListaEmpleados() {
+    public Empleado getListaEmpleadosAsignados() {
         return ListaEmpleadosAsignados;
     }
-    public void setListaEmpleados(List<Empleado> listaEmpleados) {
-        ListaEmpleadosAsignados = listaEmpleados;
-    }
-
 
 }
