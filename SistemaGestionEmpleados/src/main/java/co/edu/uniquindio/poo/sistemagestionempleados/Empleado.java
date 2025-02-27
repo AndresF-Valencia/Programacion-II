@@ -1,6 +1,6 @@
 package co.edu.uniquindio.poo.sistemagestionempleados;
 
-public abstract class Empleado implements IContribuyentes{
+public class Empleado {
     String nombre;
     String id;
     Departamento departamento;
@@ -11,17 +11,4 @@ public abstract class Empleado implements IContribuyentes{
         this.id = id;
     }
 
-    public Empleado() {
-    }
-
-    @Override
-    public void contribuir() {
-
-    }
-
-    public abstract void ejecutarProyecto();
-
-    public abstract void realizarPruebas();
-
-    public abstract void enviarDocumentacion();
 }
