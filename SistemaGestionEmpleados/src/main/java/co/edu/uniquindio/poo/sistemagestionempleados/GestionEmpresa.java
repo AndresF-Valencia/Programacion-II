@@ -31,6 +31,19 @@ public class GestionEmpresa {
         listaDepartamentos.add(departamento);
     }
 
+    public void asignarGerente(Gerente gerente, Departamento departamento) {
+        departamento.getListaEmpleados().add(gerente);
+    }
+    public void asignarTecnico(Tecnico tecnico, Departamento departamento) {
+        departamento.getListaEmpleados().add(tecnico);
+    }
+    public void asignarEmpleadoAProyecto(Empleado empleado, Proyecto proyecto) {
+        if (empleado instanceof Gerente) {
+            proyecto.getListaEmpleados().add(empleado);
+        } else if (empleado instanceof Tecnico) {
+            proyecto.getListaEmpleados().add(empleado);
+        }
+    }
     public void agregarGerente(Gerente gerente) {
         listaGerentes.add(gerente);
         listaEmpleados.add(gerente);
