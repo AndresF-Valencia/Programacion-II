@@ -94,8 +94,8 @@ public class GestionEmpresa {
         GestionEmpresa empresa = new GestionEmpresa();
 
         // Crear objetos de prueba
-        Gerente gerente1 = new Gerente("Maria López", "G001");
-        Tecnico tecnico1 = new Tecnico("Carlos Ramirez", "T001");
+        Empleado gerente1 = new Gerente("Maria López", "G001");
+        Empleado tecnico1 = new Tecnico("Carlos Ramirez", "T001");
         Proyecto proyecto1 = new Proyecto("Proyecto A");
         Departamento dep1 = new Departamento("Departamento TI");
 
@@ -111,6 +111,24 @@ public class GestionEmpresa {
         empresa.mostrarDepartamentos();
         empresa.mostrarGerentes();
         empresa.mostrarTecnicos();
+
+        // Prueba de bonos
+        System.out.println("--- PRUEBA DE BONOS ---");
+        gerente1.agregarBono(new Bono(500, "Meta de ventas alcanzada"));
+        gerente1.agregarBono(new Bono(300, "Buena gerencia"));
+        gerente1.mostrarBonos();
+
+        // Prueba de ventas
+        System.out.println("\n--- PRUEBA DE VENTAS ---");
+        gerente1.registrarVenta(new Venta(10000, "2025-02-28"));
+        gerente1.registrarVenta(new Venta(5000, "2025-03-01"));
+        gerente1.mostrarVentas();
+
+        // Prueba de evaluaciones
+        System.out.println("\n--- PRUEBA DE EVALUACIONES ---");
+        tecnico1.agregarEvaluacion(new Evaluacion(9, "Buen desempeño"));
+        tecnico1.agregarEvaluacion(new Evaluacion(8, "Puede mejorar en atención al cliente"));
+        tecnico1.mostrarEvaluaciones();
     }
 }
 

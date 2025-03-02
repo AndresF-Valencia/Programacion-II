@@ -7,6 +7,11 @@ public class Tecnico extends Empleado implements IRolTecnico, IContribuyentes {
     private List<Proyecto> proyectos;
     private List<String> contribuciones;
 
+    /**
+     * Metodo constructor
+     * @param nombre
+     * @param id
+     */
     public Tecnico(String nombre, String id) {
         super(nombre, id);
         this.proyectos = new ArrayList<>();

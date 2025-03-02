@@ -8,6 +8,11 @@ public class Gerente extends Empleado implements IRolGerente, IContribuyentes {
     private List<Proyecto> proyectos;
     private List<String> contribuciones;
 
+    /**
+     * Metodo Cosntructor
+     * @param nombre
+     * @param id
+     */
     public Gerente(String nombre, String id) {
         super(nombre, id);
         this.departamentos = new ArrayList<>();

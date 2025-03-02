@@ -5,6 +5,10 @@ public class Departamento {
     private String codigo;
     Empleado listaEmpleado;
 
+    /**
+     * Metodo constructor
+     * @param nombre
+     */
     public Departamento(String nombre) {
         this.nombre = nombre;
         this.codigo = codigo;
